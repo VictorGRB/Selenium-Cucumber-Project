@@ -1,0 +1,128 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5291380000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Sort products by price",
+        "description": "",
+        "id": "products-sorting;sort-products-by-price",
+        "after": [
+          {
+            "result": {
+              "duration": 613459100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 976821000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open the homepage",
+            "match": {
+              "location": "HomepageSteps.iOpenTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 997173500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I search products by \"new arrivals\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "new arrivals",
+                  "offset": 22
+                }
+              ],
+              "location": "HeaderSteps.iSearchProductsBy(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1017633600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I select the option \"Price\" in the Sort By list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Price",
+                  "offset": 21
+                }
+              ],
+              "location": "ProductsGridSteps.iSelectTheOptionInTheSortByList(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1058004900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I sort the products in descending direction",
+            "match": {
+              "arguments": [
+                {
+                  "val": "descending",
+                  "offset": 23
+                }
+              ],
+              "location": "ProductsGridSteps.iSortTheProducts(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64686700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the products are ordered by price in descending order",
+            "match": {
+              "arguments": [
+                {
+                  "val": "descending",
+                  "offset": 37
+                }
+              ],
+              "location": "ProductsGridSteps.theProductsAreOrderedByPriceInDescendingOrder(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Products sorting",
+    "description": "",
+    "id": "products-sorting",
+    "keyword": "Feature",
+    "uri": "src/test/resources/product-sorting.feature"
+  }
+]

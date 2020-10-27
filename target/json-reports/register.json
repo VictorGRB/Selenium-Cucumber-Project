@@ -1,0 +1,1259 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5372156400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Successful register with all details",
+        "description": "",
+        "id": "register-user;successful-register-with-all-details",
+        "after": [
+          {
+            "result": {
+              "duration": 610113700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1073500300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open the homepage",
+            "match": {
+              "location": "HomepageSteps.iOpenTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 736396900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I go to the Register page",
+            "match": {
+              "location": "HeaderSteps.iGoToTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 534565400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I fill in all mandatory fields with valid data on the Register page",
+            "match": {
+              "location": "RegisterSteps.iFillInAllMandatoryFieldsWithValidDataOnTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 130300100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I check the newsletter checkbox on the Register page",
+            "match": {
+              "location": "RegisterSteps.iCheckTheNewsletterCheckboxOnTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1127966200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I press the Register button",
+            "match": {
+              "location": "RegisterSteps.iPressTheRegisterButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24604800,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".success-msg\"}\n  (Session info: chrome\u003d86.0.4240.111)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-S8UL47O\u0027, ip: \u0027192.168.2.168\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\Victor\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54712}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 057d76fa3c40ed6a7aad563a48f6e595\n*** Element info: {Using\u003dcss selector, value\u003d.success-msg}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.example.stepdefinitions.CommonSteps.iReceiveTheFollowingConfirmationMessage(CommonSteps.java:29)\r\n\tat ✽.Then I receive the following confirmation message: \"Thank you for registering with Madison Island.\"(src/test/resources/register.feature:9)\r\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "I receive the following confirmation message: \"Thank you for registering with Madison Island.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Thank you for registering with Madison Island.",
+                  "offset": 47
+                }
+              ],
+              "location": "CommonSteps.iReceiveTheFollowingConfirmationMessage(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5274384200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Successful register with mandatory details only",
+        "description": "",
+        "id": "register-user;successful-register-with-mandatory-details-only",
+        "after": [
+          {
+            "result": {
+              "duration": 608992200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1061733300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I open the homepage",
+            "match": {
+              "location": "HomepageSteps.iOpenTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 712714500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I go to the Register page",
+            "match": {
+              "location": "HeaderSteps.iGoToTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 408986300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I fill in all mandatory fields with valid data on the Register page",
+            "match": {
+              "location": "RegisterSteps.iFillInAllMandatoryFieldsWithValidDataOnTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71284400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I set the value \"\" in the \"Middle Name\" field on the Register page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 17
+                },
+                {
+                  "val": "Middle Name",
+                  "offset": 27
+                }
+              ],
+              "location": "RegisterSteps.iSetTheValueInTheFieldOnTheRegisterPage(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1082467000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I press the Register button",
+            "match": {
+              "location": "RegisterSteps.iPressTheRegisterButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21017000,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".success-msg\"}\n  (Session info: chrome\u003d86.0.4240.111)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-S8UL47O\u0027, ip: \u0027192.168.2.168\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\Victor\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54740}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 51a5f1418144ae21dc3c91404e7a34c9\n*** Element info: {Using\u003dcss selector, value\u003d.success-msg}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.example.stepdefinitions.CommonSteps.iReceiveTheFollowingConfirmationMessage(CommonSteps.java:29)\r\n\tat ✽.Then I receive the following confirmation message: \"Thank you for registering with Madison Island.\"(src/test/resources/register.feature:17)\r\n",
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "I receive the following confirmation message: \"Thank you for registering with Madison Island.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Thank you for registering with Madison Island.",
+                  "offset": 47
+                }
+              ],
+              "location": "CommonSteps.iReceiveTheFollowingConfirmationMessage(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5299130600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Unsuccessful register with blank mandatory field",
+        "description": "",
+        "id": "register-user;unsuccessful-register-with-blank-mandatory-field;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 639120800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1057570800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I open the homepage",
+            "match": {
+              "location": "HomepageSteps.iOpenTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 781728000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I go to the Register page",
+            "match": {
+              "location": "HeaderSteps.iGoToTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 687236100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I fill in all mandatory fields with valid data on the Register page",
+            "match": {
+              "location": "RegisterSteps.iFillInAllMandatoryFieldsWithValidDataOnTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 149028000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I set the value \"\"\"\" in the \"First Name\" field on the Register page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 17
+                },
+                {
+                  "val": "First Name",
+                  "offset": 29
+                }
+              ],
+              "location": "RegisterSteps.iSetTheValueInTheFieldOnTheRegisterPage(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 151426300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I press the Register button",
+            "match": {
+              "location": "RegisterSteps.iPressTheRegisterButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 95874300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I receive the following message under the \"First Name\" field on the Register page: \"This is a required field.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "First Name",
+                  "offset": 43
+                },
+                {
+                  "val": "This is a required field.",
+                  "offset": 84
+                }
+              ],
+              "location": "RegisterSteps.iReceiveTheFollowingMessageUnderTheFieldOnTheRegisterPage(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5264388000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Unsuccessful register with blank mandatory field",
+        "description": "",
+        "id": "register-user;unsuccessful-register-with-blank-mandatory-field;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 614459100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 994234800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I open the homepage",
+            "match": {
+              "location": "HomepageSteps.iOpenTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 732750300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I go to the Register page",
+            "match": {
+              "location": "HeaderSteps.iGoToTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 420793800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I fill in all mandatory fields with valid data on the Register page",
+            "match": {
+              "location": "RegisterSteps.iFillInAllMandatoryFieldsWithValidDataOnTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72565200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I set the value \"\"\"\" in the \"Last Name\" field on the Register page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 17
+                },
+                {
+                  "val": "Last Name",
+                  "offset": 29
+                }
+              ],
+              "location": "RegisterSteps.iSetTheValueInTheFieldOnTheRegisterPage(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70746000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I press the Register button",
+            "match": {
+              "location": "RegisterSteps.iPressTheRegisterButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34053400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I receive the following message under the \"Last Name\" field on the Register page: \"This is a required field.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Last Name",
+                  "offset": 43
+                },
+                {
+                  "val": "This is a required field.",
+                  "offset": 83
+                }
+              ],
+              "location": "RegisterSteps.iReceiveTheFollowingMessageUnderTheFieldOnTheRegisterPage(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5303138800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Unsuccessful register with blank mandatory field",
+        "description": "",
+        "id": "register-user;unsuccessful-register-with-blank-mandatory-field;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 612964400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1144556100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I open the homepage",
+            "match": {
+              "location": "HomepageSteps.iOpenTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 645326000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I go to the Register page",
+            "match": {
+              "location": "HeaderSteps.iGoToTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 536727100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I fill in all mandatory fields with valid data on the Register page",
+            "match": {
+              "location": "RegisterSteps.iFillInAllMandatoryFieldsWithValidDataOnTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 138890300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I set the value \"\"\"\" in the \"Email\" field on the Register page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 17
+                },
+                {
+                  "val": "Email",
+                  "offset": 29
+                }
+              ],
+              "location": "RegisterSteps.iSetTheValueInTheFieldOnTheRegisterPage(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 127364700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I press the Register button",
+            "match": {
+              "location": "RegisterSteps.iPressTheRegisterButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32976800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I receive the following message under the \"Email\" field on the Register page: \"This is a required field.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Email",
+                  "offset": 43
+                },
+                {
+                  "val": "This is a required field.",
+                  "offset": 79
+                }
+              ],
+              "location": "RegisterSteps.iReceiveTheFollowingMessageUnderTheFieldOnTheRegisterPage(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5332091000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Unsuccessful register with blank mandatory field",
+        "description": "",
+        "id": "register-user;unsuccessful-register-with-blank-mandatory-field;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 601843100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1188165900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I open the homepage",
+            "match": {
+              "location": "HomepageSteps.iOpenTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 737948900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I go to the Register page",
+            "match": {
+              "location": "HeaderSteps.iGoToTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 615868200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I fill in all mandatory fields with valid data on the Register page",
+            "match": {
+              "location": "RegisterSteps.iFillInAllMandatoryFieldsWithValidDataOnTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 100800900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I set the value \"\"\"\" in the \"Password\" field on the Register page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 17
+                },
+                {
+                  "val": "Password",
+                  "offset": 29
+                }
+              ],
+              "location": "RegisterSteps.iSetTheValueInTheFieldOnTheRegisterPage(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69484000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I press the Register button",
+            "match": {
+              "location": "RegisterSteps.iPressTheRegisterButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33106700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I receive the following message under the \"Password\" field on the Register page: \"This is a required field.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 43
+                },
+                {
+                  "val": "This is a required field.",
+                  "offset": 82
+                }
+              ],
+              "location": "RegisterSteps.iReceiveTheFollowingMessageUnderTheFieldOnTheRegisterPage(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5389830000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Unsuccessful register with blank mandatory field",
+        "description": "",
+        "id": "register-user;unsuccessful-register-with-blank-mandatory-field;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 626493200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1120617900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I open the homepage",
+            "match": {
+              "location": "HomepageSteps.iOpenTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 762622300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I go to the Register page",
+            "match": {
+              "location": "HeaderSteps.iGoToTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 404740800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I fill in all mandatory fields with valid data on the Register page",
+            "match": {
+              "location": "RegisterSteps.iFillInAllMandatoryFieldsWithValidDataOnTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 79717200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I set the value \"\"\"\" in the \"Confirmation\" field on the Register page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 17
+                },
+                {
+                  "val": "Confirmation",
+                  "offset": 29
+                }
+              ],
+              "location": "RegisterSteps.iSetTheValueInTheFieldOnTheRegisterPage(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 85939400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I press the Register button",
+            "match": {
+              "location": "RegisterSteps.iPressTheRegisterButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31035500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I receive the following message under the \"Confirmation\" field on the Register page: \"This is a required field.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Confirmation",
+                  "offset": 43
+                },
+                {
+                  "val": "This is a required field.",
+                  "offset": 86
+                }
+              ],
+              "location": "RegisterSteps.iReceiveTheFollowingMessageUnderTheFieldOnTheRegisterPage(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5313795700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Unsuccessful register with invalid email address",
+        "description": "",
+        "id": "register-user;unsuccessful-register-with-invalid-email-address",
+        "after": [
+          {
+            "result": {
+              "duration": 625245000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1096159500,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I open the homepage",
+            "match": {
+              "location": "HomepageSteps.iOpenTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 791393200,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I go to the Register page",
+            "match": {
+              "location": "HeaderSteps.iGoToTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 732102600,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I fill in all mandatory fields with valid data on the Register page",
+            "match": {
+              "location": "RegisterSteps.iFillInAllMandatoryFieldsWithValidDataOnTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 127282500,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I set the value \"nomail@here\" in the \"Email\" field on the Register page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nomail@here",
+                  "offset": 17
+                },
+                {
+                  "val": "Email",
+                  "offset": 38
+                }
+              ],
+              "location": "RegisterSteps.iSetTheValueInTheFieldOnTheRegisterPage(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73424500,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I press the Register button",
+            "match": {
+              "location": "RegisterSteps.iPressTheRegisterButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31268600,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I receive the following message under the email field on the Register page: \"Please enter a valid email address. For example johndoe@domain.com.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Please enter a valid email address. For example johndoe@domain.com.",
+                  "offset": 77
+                }
+              ],
+              "location": "RegisterSteps.iReceiveTheFollowingMessageUnderTheEmailFieldOnTheRegisterPage(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5290794000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 44,
+        "name": "Unsuccessful register with invalid password confirmation",
+        "description": "",
+        "id": "register-user;unsuccessful-register-with-invalid-password-confirmation",
+        "after": [
+          {
+            "result": {
+              "duration": 609845800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1179441700,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I open the homepage",
+            "match": {
+              "location": "HomepageSteps.iOpenTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 698652300,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I go to the Register page",
+            "match": {
+              "location": "HeaderSteps.iGoToTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 419198600,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I fill in all mandatory fields with valid data on the Register page",
+            "match": {
+              "location": "RegisterSteps.iFillInAllMandatoryFieldsWithValidDataOnTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71696900,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I set the value \"anotherpass\" in the \"Confirmation\" field on the Register page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "anotherpass",
+                  "offset": 17
+                },
+                {
+                  "val": "Confirmation",
+                  "offset": 38
+                }
+              ],
+              "location": "RegisterSteps.iSetTheValueInTheFieldOnTheRegisterPage(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63848300,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I press the Register button",
+            "match": {
+              "location": "RegisterSteps.iPressTheRegisterButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30882700,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I receive the following message under the password confirmation field on the Register page: \"Please make sure your passwords match.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Please make sure your passwords match.",
+                  "offset": 93
+                }
+              ],
+              "location": "RegisterSteps.iReceiveTheFollowingMessageUnderThePasswordConfirmationFieldOnTheRegisterPage(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5264861300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 52,
+        "name": "Unsuccessful register with too short password",
+        "description": "",
+        "id": "register-user;unsuccessful-register-with-too-short-password",
+        "after": [
+          {
+            "result": {
+              "duration": 617111900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1128050100,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I open the homepage",
+            "match": {
+              "location": "HomepageSteps.iOpenTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 787580800,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I go to the Register page",
+            "match": {
+              "location": "HeaderSteps.iGoToTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 639080300,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I fill in all mandatory fields with valid data on the Register page",
+            "match": {
+              "location": "RegisterSteps.iFillInAllMandatoryFieldsWithValidDataOnTheRegisterPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68825500,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "I set the value \"123\" in the \"Password\" field on the Register page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123",
+                  "offset": 17
+                },
+                {
+                  "val": "Password",
+                  "offset": 30
+                }
+              ],
+              "location": "RegisterSteps.iSetTheValueInTheFieldOnTheRegisterPage(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63500100,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "I press the Register button",
+            "match": {
+              "location": "RegisterSteps.iPressTheRegisterButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31786100,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I receive the following message under the password field on the Register page: \"Please enter 6 or more characters without leading or trailing spaces.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Please enter 6 or more characters without leading or trailing spaces.",
+                  "offset": 80
+                }
+              ],
+              "location": "RegisterSteps.iReceiveTheFollowingMessageUnderThePasswordFieldOnTheRegisterPage(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Register user",
+    "description": "",
+    "id": "register-user",
+    "keyword": "Feature",
+    "uri": "src/test/resources/register.feature"
+  }
+]
